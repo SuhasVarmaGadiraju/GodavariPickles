@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Summary | Godavari Homemade Pickles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="./index.html" class="logo">Godavari Homemade Pickles</a>
+
+    <div class="right-section">
+      <nav class="nav">
+        <a href="./order.html">Order Pickles</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>☰</button>
+      <a href="./summary.html" class="cart-icon">
+        🛒
+        <span class="cart-count" data-cart-badge>0</span>
+      </a>
+    </div>
+    <div class="nav-links" data-nav-links>
+      <a href="./order.html" class="nav-link">Order Pickles</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title page-title--center">Order Summary</h1>
+        <p class="page-subtitle page-subtitle--center">Review your selection before ordering.</p>
+      </div>
+    </section>
+
+    <section class="summary">
+      <div class="container">
+        <div class="summary-wrap" data-summary-wrap>
+          <div class="summary-card" data-summary-card></div>
+        </div>
+
+        <div class="form-card" data-user-form>
+          <h2 class="form-title">Your Details</h2>
+          <div class="form-grid">
+            <label class="field">
+              <span class="field__label">Full Name</span>
+              <input class="field__input" type="text" name="fullName" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span class="field__label">Phone Number</span>
+              <input class="field__input" type="tel" name="phone" autocomplete="tel" required inputmode="tel" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field__label">Full Address</span>
+            <textarea class="field__input field__input--textarea" name="address" rows="4" placeholder="Street, Area, City, State, Pincode" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <a class="btn btn--secondary" href="./order.html">Add More Items</a>
+            <button class="btn btn--primary" type="button" data-place-order>Place Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-title">About Our Pickles</h3>
+        <p class="footer-text">We prepare fresh, homemade pickles using traditional recipes and high-quality ingredients. Every batch is made with care to bring you authentic taste, rich flavors, and the warmth of homemade food. No preservatives, just pure homemade goodness.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-text"><span class="footer-icon" aria-hidden="true">📞</span> +91 9652131224</p>
+        <p class="footer-text"><span class="footer-icon" aria-hidden="true">💬</span> WhatsApp for bulk orders</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Location</h3>
+        <p class="footer-text"><span class="footer-icon" aria-hidden="true">📍</span> Flat no:107, Vaishnavi Elite, Sanjana Estate, Gollalakoderu, Bhimavaram, Andhra Pradesh</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Godavari Homemade Pickles. Made with <span aria-hidden="true">♥</span></div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <div id="toast" class="toast"></div>
+</body>
+</html>
