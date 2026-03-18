@@ -12,9 +12,12 @@
     { id: 'mutton-boneless', name: 'Mutton Boneless Pickle', price: 1500, image: 'Mutton boneless Pickle.webp' },
     { id: 'chicken-bone', name: 'Chicken Bone Pickle', price: 800, image: 'Chicken Bone Pickle.jpg' },
     { id: 'chicken-boneless', name: 'Chicken Boneless Pickle', price: 1000, image: 'Chicken Boneless.jpeg' },
-    { id: 'gongura', name: 'Gongura Pickle', price: 300, image: 'Gongura Pickle.jpeg' },
-    { id: 'tomato', name: 'Tomato Pickle', price: 300, image: 'Tomato Pickle.jpeg' },
-    { id: 'allam', name: 'Allam Pickle', price: 300, image: 'Allam Pickle.jpg' }
+    { id: 'gongura', name: 'Gongura Pickle', price: 550, image: 'Gongura Pickle.jpeg' },
+    { id: 'tomato', name: 'Tomato Pickle', price: 550, image: 'Tomato Pickle.jpeg' },
+    { id: 'allam', name: 'Allam Pickle', price: 550, image: 'Allam Pickle.jpg' },
+    { id: 'kothimeera', name: 'Kothimeera Pickle', price: 600, image: 'Kothimeera Pickle.png' },
+    { id: 'pandumirchi', name: 'Pandumirchi Pickle', price: 600, image: 'Pandumirchi Pickle.jpg' },
+    { id: 'dhabbakayi', name: 'Dhabbakayi Pickle', price: 550, image: 'Dhabbakayi Pickle.jpg' }
   ];
 
   function safeParse(json, fallback){
@@ -116,7 +119,7 @@
 
     const list = PRODUCTS.filter(p => {
       if(filter === 'veg'){
-        const vegIds = ['mango','gongura','tomato','allam'];
+        const vegIds = ['mango','gongura','tomato','allam','kothimeera','pandumirchi','dhabbakayi'];
         return vegIds.includes(p.id);
       }
       if(filter === 'nonveg'){
